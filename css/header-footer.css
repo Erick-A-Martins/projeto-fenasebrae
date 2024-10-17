@@ -1,0 +1,324 @@
+/* RESET CSS */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* HEADER ----------------------------------------------------*/
+.cabecalho-informacoes {
+    display: flex;
+    justify-content: end;
+    color: #0F438A;
+    gap: 32px;
+    margin: 0.5rem 5rem;
+}
+.cabecalho-informacoes-conteudo {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.cabecalho-banner {
+    display: flex;
+    flex-direction: column;
+    background: url(/assets/header-footer/teste-capa.webp) no-repeat center center;
+    background-size: cover;
+    padding: 3rem 0 10rem;
+}
+.cabecalho-banner-container {
+    display: flex;
+}
+.cabecalho-banner-logo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.cabecalho-banner-menu {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 20px;
+    padding-right: 16rem;
+}
+.cabecalho-banner-nav {
+    display: none;
+}
+.cabecalho-banner-menu-divisor {
+    display: none;
+}
+.cabecalho-banner-menu-home {
+    display: flex;
+    gap: 16px;
+}
+.cabecalho-banner-menu-home:first-child a {
+    display: flex;
+    align-self: center;
+}
+.cabecalho-banner-menu ul {
+    display: flex;
+    list-style: none;
+    height: 57px;
+    gap: 5rem;
+    padding: 16px 32px;
+    border-radius: 5px;
+    background: rgba(15, 67, 138, 0.8);
+}
+.cabecalho-banner-menu-item {
+    color: white;
+    margin-left: 32px;
+    transition: color 0.3s ease;
+}
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.hamburguer-icon span {
+    display: flex;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+}
+
+#hamburguer-icon-span2 {
+    width: 16px;
+}
+.cabecalho-banner-titulo h1 {
+    text-align: center;
+    font-size: 96px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+.cabecalho-banner-menu-item:hover {
+    color: #218BE7;
+}
+.cabecalho-banner-menu-home {
+    background: url(/assets/header-footer/icone-casa.png) no-repeat;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.cabecalho-banner-menu-home:hover {
+    background: url(/assets/header-footer/icone2-casa.png) no-repeat;
+}
+.fixado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* FOOTER ----------------------------------------------------*/
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 67px 0;
+    background-color: #0F438A;
+}
+.rodape-container-1, .rodape-container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 5rem;
+}
+.rodape-logo {
+    display: flex;
+    justify-content: center;
+}
+.rodape-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.rodape-containers a, .rodape-containers span {
+    color: white;
+    font-weight: 300;
+}
+.rodape-containers-titulo {
+    font-size: 20px;
+    color: #218BE7;
+}
+.rodape-containers-sociais {
+    display: flex;
+    gap: 8px;
+}
+.rodape-containers-sociais a {
+    transition: transform 0.3s ease;
+}
+.rodape-containers-sociais a:hover {
+    transform: scale(0.9);
+}
+
+
+/* INFORMACAO ATIVA */ 
+#informacoes-horario.informacao-ativa span{
+    display: flex;    
+}
+
+
+/* RESPONSIVIDADE ----------------------------------------------------*/
+@media (max-width: 1024px) {
+    /* HEADER -----------------------------------------------------------*/
+    .cabecalho-informacoes {
+        justify-content: center;
+    }
+    .cabecalho-banner {
+        padding: 3rem 0 7rem;
+    }
+    .cabecalho-banner-logo {
+        display: none;
+    }
+    .cabecalho-banner-menu {
+        width: unset;
+        padding: 2% 2.5%;
+        position: relative;
+        left: 0;
+        border-radius: 0px 5px 5px 0;
+        background: rgba(15, 67, 138, 0.8);
+        transition: left 0.6s ease;
+    }
+    .cabecalho-banner-menu ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: unset;
+        position: fixed;
+        height: 30rem;
+        background: rgba(15, 67, 138, 0.8);
+        padding: 1%;
+        top: -100%;
+        left: 0;
+        gap: 3rem;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.4s ease;
+    }
+    .cabecalho-banner-menu-divisor {
+        display: flex;
+        width: 45rem;
+        height: 2px;
+        background-color: white;
+        justify-content: center;
+        align-self: center;
+        margin-top: -4%;
+    }
+    .cabecalho-banner-menu li {
+        display: block;
+        font-size: 18px;
+        margin-left: 5%;
+    }
+    .cabecalho-banner-nav {
+        display: flex;
+        cursor: pointer;
+        width: 100%;
+        padding: 1%;
+    }
+    .cabecalho-banner-nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 20%;
+    }
+    .cabecalho-banner-nav-btn img {
+        width: 30%;
+    }
+    .cabecalho-banner-nav-btn span {
+        color: white;
+    }
+    .cabecalho-banner-nav-logo {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding-right: 20%;
+    }
+    .hamburguer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .hamburguer-icon {
+        gap: 6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburguer-icon span {
+        background-color: white;
+    }
+    .hamburguer-titulo {
+        color: white;
+    }
+    .cabecalho.ativo .cabecalho-banner-menu ul {
+        display: flex;
+        top: 0;
+    }
+    .cabecalho:not(.ativo) .cabecalho-banner-menu ul {
+        top: -100%;
+    }
+    .cabecalho.ativo .cabecalho-banner-menu {
+        left: -100%;
+    }
+    .cabecalho:not(.ativo) .cabecalho-banner-menu {
+        left: 0;
+    }
+    /* RODAPE -----------------------------------------------------------*/
+    .rodape-container-1, .rodape-container-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* HEADER -----------------------------------------------------------*/
+    .cabecalho-informacoes {
+        justify-content: flex-end;
+    }
+    .cabecalho-informacoes-conteudo span {
+        display: none;
+        transition: display 0.4s ease;
+    }
+    .cabecalho-banner-menu {
+        padding: 3%;
+    }
+    .cabecalho-banner-menu-divisor {
+        width: 30rem;
+    }
+    .cabecalho-banner-titulo h1 {
+        font-size: 76px;
+    }
+    /* RODAPE -----------------------------------------------------------*/
+    .rodape {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .cabecalho-banner-menu-divisor {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .cabecalho-banner-menu {
+        padding: 5.5%;
+    }
+    .cabecalho-banner-menu-divisor {
+        width: 18rem;
+    }
+}

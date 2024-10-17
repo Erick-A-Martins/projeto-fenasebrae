@@ -1,0 +1,241 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+}
+/* PRIMEIRO CONTEUDO -------------------------------- */
+.primeiro-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primeiro-conteudo-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    gap: 18px;
+    width: 30%;
+}
+.primeiro-conteudo-containers h1 {
+    font-size: 40px;
+    color: #218BE7;
+}
+.primeiro-conteudo-containers p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
+.primeiro-conteudo-containers a {
+    color: #218BE7;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* DIVISOR -----------------*/
+
+.divisor {
+    display: flex;
+    align-self: center;
+    width: 40%;
+    margin: 0 0 5%;
+    border: 1px solid #218BE7;
+}
+
+/* SEGUNDO CONTEUDO ------------------------------------------------*/
+.segundo-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.segundo-conteudo-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 3rem;
+}
+.segundo-conteudo-titulo h1 {
+    font-size: 40px;
+    color: #218BE7;
+}
+.segundo-conteudo-titulo p {
+    font-size: 20px;
+    font-weight: 300;
+}
+.segundo-conteudo-form {
+    width: 50%;
+}
+.segundo-conteudo-form-box1, .segundo-conteudo-form-box2 {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    margin-top: 2rem;
+}
+.segundo-conteudo-form-box3, .segundo-conteudo-form-box4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+.segundo-conteudo-form-box5 {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 0;
+}
+.segundo-conteudo-form-box1 div, .segundo-conteudo-form-box2 div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.segundo-conteudo-form-box1 label, .segundo-conteudo-form-box2 label, .segundo-conteudo-form-box3 label, .segundo-conteudo-form-box4 label {
+    font-size: 24px;
+    font-weight: 500;
+    color: #484848;
+}
+.segundo-conteudo-form-box1 input, .segundo-conteudo-form-box2 input, .segundo-conteudo-form-box3 input, .segundo-conteudo-form-box4 textarea {
+    width: 100%;
+    padding: 16px 12px;
+    border: 1px solid #218BE7;
+}
+.segundo-conteudo-form-box5 input {
+    padding: 2% 5%;
+    font-size: 20px;
+    border: 1px solid #218BE7;
+    color: #218BE7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.segundo-conteudo-form-box5 input:hover {
+    transform: scale(0.9);
+    color: #0F438A;
+    border: 1px solid #0F438A;
+}
+.segundo-conteudo-form-box4 textarea {
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TERCEIRO CONTEUDO ------------------------------------------------*/
+.terceiro-conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 10% 0;
+    gap: 64px;
+}
+.terceiro-conteudo-whatsapp, .terceiro-conteudo-linkedin {
+    margin-top: 5px;
+}
+
+.terceiro-conteudo-whatsapp, .terceiro-conteudo-instagram, .terceiro-conteudo-facebook, .terceiro-conteudo-linkedin {
+    transition: transform 0.3s ease;
+}
+
+.terceiro-conteudo-whatsapp:hover, .terceiro-conteudo-instagram:hover, .terceiro-conteudo-facebook:hover, .terceiro-conteudo-linkedin:hover {
+    transform: scale(0.9);
+}
+
+/* WHATSAPP ICONE -----*/
+
+.terceiro-conteudo-whatsapp-img {
+    width: 60px;
+    height: 60px;
+    background-image: url('/assets/contato/icone-whatsapp.svg');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+a:hover .terceiro-conteudo-whatsapp-img {
+    background-image: url(/assets/contato/icone-whatsapp-hover.svg);
+}
+
+/* INSTAGRAM ICONE -----*/
+
+.terceiro-conteudo-instagram-img {
+    width: 70px;
+    height: 70px;
+    background-image: url('/assets/contato/icone-instagram.svg');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+a:hover .terceiro-conteudo-instagram-img {
+    background-image: url(/assets/contato/icone-instagram-hover.svg);
+}
+
+/* FACEBOOK ICONE -----*/
+
+.terceiro-conteudo-facebook-img {
+    width: 70px;
+    height: 70px;
+    background-image: url('/assets/contato/icone-facebook.svg');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+a:hover .terceiro-conteudo-facebook-img {
+    background-image: url(/assets/contato/icone-facebook-hover.svg);
+}
+
+/* LINKEDIN ICONE -----*/
+
+.terceiro-conteudo-linkedin-img {
+    width: 60px;
+    height: 60px;
+    background-image: url('/assets/contato/icone-linkedin.svg');
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+a:hover .terceiro-conteudo-linkedin-img {
+    background-image: url(/assets/contato/icone-linkedin-hover.svg);
+}
+
+/* RESPONSIVIDADE -----------------------------------------------------*/
+@media(max-width: 1400px) {
+    .segundo-conteudo-form {
+        width: 70%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .primeiro-conteudo {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .primeiro-conteudo-containers {
+        padding: 10% 0;
+        width: 50%;
+    }
+    .divisor {
+        margin: 0 0 10%;
+    }
+    input::placeholder, textarea::placeholder {
+        font-size: 16px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    .terceiro-conteudo {
+        gap: 48px;
+    }
+    .terceiro-conteudo-whatsapp-img, .terceiro-conteudo-linkedin-img {
+        width: 40px;
+        height: 40px;
+    }
+    .terceiro-conteudo-instagram-img, .terceiro-conteudo-facebook-img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media(max-width: 425px) {
+    .terceiro-conteudo {
+        gap: 18px;
+    }
+}
