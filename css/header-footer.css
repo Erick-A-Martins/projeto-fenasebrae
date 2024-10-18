@@ -324,6 +324,12 @@
 }
 
 @media (max-width: 425px) {
+    .cabecalho-banner-menu ul {
+        height: 28rem;
+    }
+    .cabecalho-banner-nav {
+        margin-top: 5%;
+    }
     .cabecalho-banner-menu {
         padding: 5.5%;
     }
