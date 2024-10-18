@@ -233,6 +233,9 @@ a:hover .terceiro-conteudo-linkedin-img {
     .primeiro-conteudo-containers a {
         font-size: 20px;
     }
+    .divisor {
+        width: 70%;
+    }
     .terceiro-conteudo {
         gap: 48px;
     }
@@ -270,6 +273,9 @@ a:hover .terceiro-conteudo-linkedin-img {
 }
 
 @media(max-width: 425px) {
+    .primeiro-conteudo-containers img {
+        width: 70px;
+    }
     .terceiro-conteudo {
         gap: 18px;
     }

@@ -176,6 +176,7 @@
     /* HEADER -----------------------------------------------------------*/
     .cabecalho-informacoes {
         justify-content: center;
+        margin: 0.5rem 2rem;
     }
     .cabecalho-banner {
         padding: 6rem 0 7rem;
@@ -324,6 +325,12 @@
 }
 
 @media (max-width: 425px) {
+    .cabecalho-informacoes {
+        margin: 0.5rem 1rem;
+    }
+    .cabecalho-informacoes-conteudo span {
+        font-size: 14px;
+    }
     .cabecalho-banner-menu ul {
         height: 28rem;
     }
