@@ -178,7 +178,7 @@
         justify-content: center;
     }
     .cabecalho-banner {
-        padding: 3rem 0 7rem;
+        padding: 6rem 0 7rem;
     }
     .cabecalho-banner-logo {
         display: none;
@@ -186,7 +186,7 @@
     .cabecalho-banner-menu {
         width: unset;
         padding: 2% 2.5%;
-        position: relative;
+        position: fixed;
         left: 0;
         border-radius: 0px 5px 5px 0;
         background: rgba(15, 67, 138, 0.8);
@@ -309,6 +309,15 @@
 }
 
 @media (max-width: 590px) {
+    .cabecalho-banner {
+        padding: 5rem 0;
+    }
+    .cabecalho-banner-titulo h1 {
+        font-size: 56px;
+    }
+    .cabecalho-banner-nav-logo img {
+        width: 70%;
+    }
     .cabecalho-banner-menu-divisor {
         width: 23rem;
     }

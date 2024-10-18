@@ -221,6 +221,18 @@ a:hover .terceiro-conteudo-linkedin-img {
 }
 
 @media(max-width: 768px) {
+    .primeiro-conteudo-containers {
+        width: 60%;
+    }
+    .primeiro-conteudo-containers h1, .segundo-conteudo-titulo h1 {
+        font-size: 24px;
+    }
+    .primeiro-conteudo-containers p, .segundo-conteudo-titulo p {
+        font-size: 18px;
+    }
+    .primeiro-conteudo-containers a {
+        font-size: 20px;
+    }
     .terceiro-conteudo {
         gap: 48px;
     }
@@ -231,6 +243,29 @@ a:hover .terceiro-conteudo-linkedin-img {
     .terceiro-conteudo-instagram-img, .terceiro-conteudo-facebook-img {
         width: 48px;
         height: 48px;
+    }
+}
+
+@media(max-width: 620px) {
+    .primeiro-conteudo-containers {
+        width: 80%;
+    }
+    .segundo-conteudo-titulo {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .segundo-conteudo-form {
+        width: 80%;
+    }
+    .segundo-conteudo-form-box1, .segundo-conteudo-form-box2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .segundo-conteudo-form-box1 div, .segundo-conteudo-form-box2 div {
+        width: 100%;
+    }
+    .segundo-conteudo-form-box1 label, .segundo-conteudo-form-box2 label, .segundo-conteudo-form-box3 label, .segundo-conteudo-form-box4 label {
+        text-align: center;
     }
 }
 
