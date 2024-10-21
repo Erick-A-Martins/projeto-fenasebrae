@@ -43,10 +43,10 @@
 }
 .cabecalho-banner-menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 70%;
     font-size: 20px;
-    padding-right: 16rem;
+    padding-left: 3.5rem;
 }
 .cabecalho-banner-nav {
     display: none;
@@ -112,14 +112,18 @@
 .cabecalho-banner-menu-home:hover {
     background: url(/assets/header-footer/icone2-casa.png) no-repeat;
 }
+/* CLASSE APLICADA NO MENU QUANDO O USUARIO SCROLLAR*/
 .fixado {
     position: fixed;
+    justify-content: center;
     top: 0;
     left: 0;
     padding: 0;
-    border-radius: 0px 0px 5px 5px;
     width: 100%;
     z-index: 1000;
+}
+.cabecalho-banner-menu.fixado #menu-items {
+    border-radius: 0px 0px 5px 5px;
 }
 
 /* FOOTER ----------------------------------------------------*/
@@ -172,6 +176,12 @@
 
 
 /* RESPONSIVIDADE ----------------------------------------------------*/
+@media (max-width: 1130px) {
+    .cabecalho-banner-menu {
+        padding-left: unset;
+    }
+}
+
 @media (max-width: 1024px) {
     /* HEADER -----------------------------------------------------------*/
     .cabecalho-informacoes {
@@ -291,7 +301,6 @@
     }
     .cabecalho-informacoes-conteudo span {
         display: none;
-        transition: display 0.4s ease;
     }
     .cabecalho-banner-menu {
         padding: 3%;
