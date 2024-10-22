@@ -46,7 +46,7 @@
     justify-content: flex-start;
     width: 70%;
     font-size: 20px;
-    padding-left: 3.5rem;
+    padding-left: 8rem;
 }
 .cabecalho-banner-nav {
     display: none;
@@ -73,7 +73,6 @@
 }
 .cabecalho-banner-menu-item {
     color: white;
-    margin-left: 32px;
     transition: color 0.3s ease;
 }
 .hamburguer {
@@ -104,14 +103,14 @@
 .cabecalho-banner-menu-item:hover {
     color: #218BE7;
 }
-.cabecalho-banner-menu-home {
+/* .cabecalho-banner-menu-home {
     background: url(/assets/header-footer/icone-casa.png) no-repeat;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 .cabecalho-banner-menu-home:hover {
     background: url(/assets/header-footer/icone2-casa.png) no-repeat;
-}
+} */
 /* CLASSE APLICADA NO MENU QUANDO O USUARIO SCROLLAR*/
 .fixado {
     position: fixed;
@@ -228,9 +227,10 @@
         margin-top: -4%;
     }
     .cabecalho-banner-menu li {
-        display: block;
+        display: flex;    
+        justify-content: center;
+        align-self: center;
         font-size: 18px;
-        margin-left: 5%;
     }
     .cabecalho-banner-nav {
         display: flex;
@@ -245,16 +245,10 @@
         width: 20%;
     }
     .cabecalho-banner-nav-btn img {
-        width: 30%;
+        width: 15%;
     }
     .cabecalho-banner-nav-btn span {
         color: white;
-    }
-    .cabecalho-banner-nav-logo {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        padding-right: 20%;
     }
     .hamburguer {
         display: flex;
@@ -324,9 +318,6 @@
     }
     .cabecalho-banner-titulo h1 {
         font-size: 56px;
-    }
-    .cabecalho-banner-nav-logo img {
-        width: 70%;
     }
     .cabecalho-banner-menu-divisor {
         width: 23rem;
